@@ -2,4 +2,4 @@
 The flag is lost somewhere in this spiral maze. Can you find it for me?  
 Download [spiral.jpg](https://github.com/Mayank-Parasramka/Klugde-Question-Mayank/blob/0bede97a6d9dc552a8ebf9789035348e86406aaa/spiral.jpg).
 
-[Hint]()
+[Hint](https://github.com/Mayank-Parasramka/Klugde-Question-Mayank/blob/b145bcc2a3b4725b75f4419a6a95fe2f50db66f1/hint.md)
