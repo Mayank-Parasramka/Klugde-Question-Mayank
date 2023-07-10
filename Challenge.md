@@ -1,5 +1,5 @@
 #### Cryptography, Forensics and Steganography
-# Question: Spiralling up
+# Spiralling up
 The flag is lost somewhere in this spiral maze. Can you find it for me?  
 Download [spiral.jpg](https://github.com/Mayank-Parasramka/Klugde-Question-Mayank/blob/8ab3b3fe7b424937e20a93ed179c33a57454ffd4/spiral.jpg).
 
