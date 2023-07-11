@@ -8,13 +8,13 @@ In this step we apply
 ```bash
  exiftool spiral.jpg
 ```
-and we get this in the comment:   **I5ZGKYLUEBLW64TLFQQE433XEB2HE6JAORXSAZDFMNXWIZJAORUGS4ZAKRUWMICSMR4GC2TKPJTSA5DCEBZEG5KRNRLGO3SONQ======**
+and we get this in the comment:   **"I5ZGKYLUEBLW64TLFQQE433XEB2HE6JAORXSAZDFMNXWIZJAORUGS4ZAKRUWMICSMR4GC2TKPJTSA5DCEBZEG5KRNRLGO3SONQ======"**
 
 This is Base 32  
 we get:   
-**Great Work, Now try to decode this Tif Rdxajjzg tb rCuQlVgnNl**
+**"Great Work, Now try to decode this Tif Rdxajjzg tb rCuQlVgnNl"**
 
-Now this was a custom cipher where the shift is in Fibonacci series, also hinted with the spiral picture.  
+Now this was a custom cipher where the shift is in Fibonacci series, also hinted with the spiral picture since a spiral is mathematically represented through fibonacci series.
 I used this code for its encryption
 ```python
 def fibo(n_terms):
@@ -65,7 +65,7 @@ print("Cipher Text is : " + encrypt_text(plaintext))
 ```
 Similar code can be written for decryption.  
 Hence the decrypted text would be:  
-**The Password in spiRaLliNg**
+**"The Password in spiRaLliNg"**
 
 ## STEP-2: Using Steghide on Image
 In this step we apply
@@ -80,10 +80,15 @@ In this step we apply
 stegsnow -C -p "spiRaLliNg" fibo.txt
 ```
 and get this:  
-**4wZ4z3PU9MoLy3RFqzjrzLs1juvyax6L2A4q7KbCzCKYN8RG9R6GV6KK8Fm8Nmdzvx**  
+**"4wZ4z3PU9MoLy3RFqzjrzLs1juvyax6L2A4q7KbCzCKYN8RG9R6GV6KK8Fm8Nmdzvx"**  
 which is encoded in base 58.  
 Decoding this will finally give out our flag:  
-**kludgeCTF{f1B0n4Cc1_L0v3s_sPiR4L5_t00_011235811}**
+**"kludgeCTF{f1B0n4Cc1_L0v3s_sPiR4L5_t00_011235811}"**
+### Remarks:(_optional to read_)
+* I Was thinking to add binary file to solve through ghidhira, but dropped the plan as the challenge would become very difficult otherwise.
+* I was thinking about using spiral cipher (matching the theme) somewhere in my challenge but ended up not doing it as there is no proper online encoder/decoder or any python code for it and some decoders had multiple types spiral cipher, so dropped it to avoid confusion.
+* I hope you liked the question.
+* **Easter Egg**: The last 9 digits in the flag is actually the fibonacci series.
 
 
 
